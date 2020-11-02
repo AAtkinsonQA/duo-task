@@ -1,7 +1,7 @@
 # Use Python Image
 FROM python:3.6
 # Copy contents into image
- COPY . .
+COPY . .
 # Run pip dependencies
 RUN pip3 install flask
 # Expose the correct port
