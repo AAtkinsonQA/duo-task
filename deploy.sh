@@ -13,5 +13,5 @@ git clone https://github.com/LukeBenson/duo-task.git
 if [ $(docker ps -a | grep nginx) ]; then
   sudo docker rm -f nginx
 fi
-sudo docker run -d -p 80:80 --mount type=bind,source=./duo-task/nginx.conf,target=/etc/nginx/nginx.conf --name nginx nginx:latest
+sudo docker run -d -p 80:80 --mount type=bind,source=/home/lukewestside14/duo-task/nginx.conf,target=/etc/nginx/nginx.conf --name nginx nginx:latest
 EOF
