@@ -1,5 +1,7 @@
 # Duo Task
 
+## Demo
+
 This is a basic Flask application that serves a simple static website that returns the machine's hostname.
 
 It is directly accessible on port `5000`.
